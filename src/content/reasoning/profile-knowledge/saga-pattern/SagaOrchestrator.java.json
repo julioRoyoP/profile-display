@@ -1,0 +1,14 @@
+{
+  "summary": "Se eligió una Saga orquestada con compensación manual para mantener la consistencia entre servicios sin recurrir a transacciones distribuidas (2PC).",
+  "alternatives": [
+    {
+      "name": "Two-Phase Commit (2PC) / XA",
+      "tradeoff": "Consistencia fuerte inmediata, pero acopla los servicios al coordinador, bloquea recursos durante el commit y escala mal; muchos brokers y bases no lo soportan bien."
+    },
+    {
+      "name": "Saga coreografiada (eventos sin orquestador)",
+      "tradeoff": "Menor acoplamiento a un componente central, pero la lógica de la transacción queda dispersa entre servicios y el flujo global es difícil de seguir y depurar."
+    }
+  ],
+  "decision": "Con un orquestador explícito el flujo de la transacción de negocio queda en un único lugar legible y testeable, y cada paso define su acción de compensación. Se acepta la consistencia eventual (y la necesidad de idempotencia) a cambio de desacoplar los servicios y evitar los bloqueos y la fragilidad operativa del 2PC. La coreografía se descartó porque, al crecer el número de pasos, el coste de razonar sobre el flujo completo superaba la ventaja de no tener orquestador."
+}

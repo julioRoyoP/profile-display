@@ -1,0 +1,32 @@
+[
+  {
+    "id": "exp-1",
+    "company": "[PLACEHOLDER] Banco / Entidad Financiera",
+    "sector": "Banca",
+    "role": "Arquitecto de Software",
+    "period": { "from": "2021", "to": "Actualidad" },
+    "summary": "[PLACEHOLDER] Plataforma de pagos y liquidación que procesa transacciones de alto volumen con requisitos estrictos de consistencia y trazabilidad. Responsable del diseño de la arquitectura de servicios y de las decisiones de integración entre sistemas core.",
+    "architectureNotes": "[PLACEHOLDER] Microservicios sobre Spring Boot, mensajería asíncrona con Kafka, PostgreSQL como almacén transaccional y Redis para caché. Patrón Saga para transacciones distribuidas y Outbox para garantizar la entrega de eventos.",
+    "highlight": "[PLACEHOLDER] Rediseño del flujo de liquidación que eliminó inconsistencias eventuales bajo carga, reduciendo las incidencias de conciliación manual de forma drástica."
+  },
+  {
+    "id": "exp-2",
+    "company": "[PLACEHOLDER] Operador de Telecomunicaciones",
+    "sector": "Telco",
+    "role": "Backend Senior / Tech Lead",
+    "period": { "from": "2018", "to": "2021" },
+    "summary": "[PLACEHOLDER] Sistema de aprovisionamiento de servicios para millones de clientes, con integraciones hacia sistemas legacy y APIs públicas. Lideré técnicamente un equipo de backend en la modernización de los servicios críticos.",
+    "architectureNotes": "[PLACEHOLDER] Migración progresiva de un monolito Java a servicios desacoplados. API Gateway, autenticación centralizada con OAuth2/Keycloak, y bases de datos relacionales con estrategias de particionado para escalar lecturas.",
+    "highlight": "[PLACEHOLDER] Estrategia de migración incremental (strangler fig) que permitió sustituir el core sin ventanas de parada significativas para el negocio."
+  },
+  {
+    "id": "exp-3",
+    "company": "[PLACEHOLDER] Consultora Tecnológica",
+    "sector": "Consultoría / Multisector",
+    "role": "Desarrollador Backend",
+    "period": { "from": "2015", "to": "2018" },
+    "summary": "[PLACEHOLDER] Desarrollo de soluciones a medida para clientes de distintos sectores, con foco en backend, modelado de datos e integración de sistemas.",
+    "architectureNotes": "[PLACEHOLDER] APIs REST sobre Spring, modelado relacional y optimización de consultas SQL, integraciones con servicios de terceros y tareas batch para procesamiento por lotes.",
+    "highlight": "[PLACEHOLDER] Diseño de un modelo de datos reutilizable que se convirtió en base de varios proyectos posteriores del equipo."
+  }
+]

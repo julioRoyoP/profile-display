@@ -1,0 +1,79 @@
+[
+  {
+    "id": "skill-arch-distributed",
+    "name": "Diseño de arquitecturas distribuidas",
+    "category": "Arquitectura",
+    "evidenceType": "experience",
+    "evidenceRef": "exp-1"
+  },
+  {
+    "id": "skill-resilience-patterns",
+    "name": "Patrones de resiliencia (Saga, Outbox)",
+    "category": "Arquitectura",
+    "evidenceType": "demo",
+    "evidenceRef": "saga-pattern"
+  },
+  {
+    "id": "skill-eventual-consistency",
+    "name": "Consistencia eventual / event-driven",
+    "category": "Arquitectura",
+    "evidenceType": "demo",
+    "evidenceRef": "outbox-pattern"
+  },
+  {
+    "id": "skill-migration-strategies",
+    "name": "Estrategias de migración (Strangler Fig)",
+    "category": "Arquitectura",
+    "evidenceType": "experience",
+    "evidenceRef": "exp-2"
+  },
+  {
+    "id": "skill-spring-boot",
+    "name": "Spring Boot",
+    "category": "Backend",
+    "evidenceType": "project",
+    "evidenceRef": "strongernerd"
+  },
+  {
+    "id": "skill-rest-apis",
+    "name": "Diseño de APIs REST",
+    "category": "Backend",
+    "evidenceType": "experience",
+    "evidenceRef": "exp-3"
+  },
+  {
+    "id": "skill-async-messaging",
+    "name": "Mensajería asíncrona (Kafka)",
+    "category": "Backend",
+    "evidenceType": "experience",
+    "evidenceRef": "exp-1"
+  },
+  {
+    "id": "skill-postgresql",
+    "name": "PostgreSQL",
+    "category": "Base de Datos",
+    "evidenceType": "project",
+    "evidenceRef": "strongernerd"
+  },
+  {
+    "id": "skill-data-modeling",
+    "name": "Modelado de datos y SQL",
+    "category": "Base de Datos",
+    "evidenceType": "experience",
+    "evidenceRef": "exp-3"
+  },
+  {
+    "id": "skill-security-authz",
+    "name": "Autenticación y autorización (OAuth2 / Keycloak)",
+    "category": "Seguridad",
+    "evidenceType": "demo",
+    "evidenceRef": "security-jwt-keycloak"
+  },
+  {
+    "id": "skill-react",
+    "name": "React",
+    "category": "Frontend",
+    "evidenceType": "project",
+    "evidenceRef": "strongernerd"
+  }
+]

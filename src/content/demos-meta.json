@@ -1,0 +1,13 @@
+{
+  "_comment": "Metadatos curados OPCIONALES por nombre de carpeta del repo de demos (profile-knowledge). Indexado por nombre exacto de carpeta. Si una carpeta del repo NO tiene entrada aquí, debe mostrarse igualmente con un título derivado del nombre de carpeta (capitalizado) y sin descripción — NUNCA se oculta (ver sección 4 y 6 de la arquitectura).",
+  "saga-pattern": {
+    "title": "Saga Pattern con compensación",
+    "description": "Orquestación de transacciones distribuidas con rollback manual mediante acciones de compensación.",
+    "tags": ["resiliencia", "transacciones", "spring"]
+  },
+  "outbox-pattern": {
+    "title": "Outbox Pattern",
+    "description": "Consistencia eventual para notificaciones asíncronas: los eventos se persisten junto a la transacción y se publican después.",
+    "tags": ["async", "mensajería", "spring"]
+  }
+}

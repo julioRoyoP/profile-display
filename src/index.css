@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-base text-text-primary font-sans antialiased;
+  }
+
+  /* Compensa la altura del header fijo al saltar a un ancla de sección */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  /* Foco visible y coherente con la paleta para navegación por teclado */
+  :focus-visible {
+    @apply outline-none ring-2 ring-teal ring-offset-2 ring-offset-base;
+  }
+}

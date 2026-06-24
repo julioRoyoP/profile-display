@@ -1,0 +1,14 @@
+{
+  "summary": "Se eligió el Outbox Pattern para publicar eventos de forma fiable: el evento se persiste en la misma transacción que el cambio de estado y se publica después, evitando perder mensajes ante fallos.",
+  "alternatives": [
+    {
+      "name": "Publicar al broker dentro de la transacción de negocio",
+      "tradeoff": "Más simple de escribir, pero la escritura en BD y la publicación no son atómicas: un fallo entre ambas deja el sistema inconsistente (evento perdido o duplicado sin control)."
+    },
+    {
+      "name": "Change Data Capture (CDC) sobre el log de la base de datos",
+      "tradeoff": "Desacopla totalmente la app de la publicación, pero añade infraestructura (p. ej. Debezium + Kafka Connect) y complejidad operativa difícil de justificar a esta escala."
+    }
+  ],
+  "decision": "Escribir el evento en una tabla outbox dentro de la misma transacción garantiza atomicidad con el cambio de estado. Un proceso aparte (este relay) lee la tabla y publica al broker con reintentos, marcando cada evento como enviado. Se asume entrega 'at-least-once' (los consumidores deben ser idempotentes) a cambio de no perder eventos nunca. CDC se descartó por su coste operativo: la tabla outbox cubre la necesidad con la infraestructura ya existente."
+}

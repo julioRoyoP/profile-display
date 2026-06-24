@@ -1,0 +1,12 @@
+[
+  {
+    "id": "strongernerd",
+    "name": "StrongerNerd",
+    "type": "fullstack",
+    "description": "E-commerce bajo pedido con catálogo, gestión de pedidos y pagos. Diseñado para garantizar consistencia en operaciones distribuidas mediante Saga Pattern (con compensación) y entrega fiable de eventos mediante Outbox Pattern.",
+    "stack": ["Spring Boot", "React", "PostgreSQL", "Keycloak", "MinIO"],
+    "hasArchitectureDiagram": true,
+    "githubRepo": null,
+    "demoUrl": null
+  }
+]

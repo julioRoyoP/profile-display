@@ -1,0 +1,11 @@
+{
+  "name": "[PLACEHOLDER] Tu Nombre Apellido",
+  "headline": "[PLACEHOLDER] Arquitecto de Software / Backend Senior",
+  "subheadline": "[PLACEHOLDER] Diseño de sistemas distribuidos · Backend · Bases de datos",
+  "bio": "[PLACEHOLDER] Breve bio de 1-2 frases centrada en arquitectura y backend: qué tipo de sistemas diseñas, en qué dominios, y qué te diferencia. El texto real se rellena más adelante.",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/PLACEHOLDER",
+    "github": "https://github.com/julioroyop",
+    "email": "placeholder@example.com"
+  }
+}
